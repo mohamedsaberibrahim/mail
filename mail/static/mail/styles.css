@@ -1,0 +1,72 @@
+textarea {
+    min-height: 400px;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100%;
+        padding: 15px;
+        line-height: 100%;
+        font-size: 100%;
+    }
+    75% {
+        opacity: 0;
+        height: 100%;
+        padding: 15px;
+        line-height: 100%;
+        font-size: 100%;
+    }
+    100% {
+        opacity: 0;
+        height: 0px;
+        padding: 0px;
+        font-size: 0px;
+        line-height: 0px;
+        border-radius:0px;
+    }
+}
+
+.hide{
+    color:#fff;
+    background-color:#343a40;
+    border-color:#343a40;
+    padding:.20rem .5rem;
+    font-size:.875rem;
+    line-height:1;
+    border-radius:.4rem;
+}
+.hide:hover{
+    color:#fff;
+    background-color:#0d4570;
+    border-color:#072338
+}
+
+
+.readmail {
+    background-color: #d1dadb;
+    animation-name: hide;
+    padding: 20px;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    border-radius:.4rem
+}
+.unreadmail {
+    background-color: #ffffff;
+    animation-name: hide;
+    padding: 15px;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    border-radius:.4rem
+}
+
+.error-messages {
+    color: red;
+    font-size: 12px; 
+}
+
+#subject{
+    width: 255px;
+}
